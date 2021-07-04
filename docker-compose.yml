@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  vue:
+    image: nginx:stable-alpine
+    ports:
+      - 8083:80
+    volumes:
+      - "/Users/movie/Code/VUE/site/dist:/usr/share/nginx/html:ro"
